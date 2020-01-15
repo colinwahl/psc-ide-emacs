@@ -55,7 +55,6 @@
             (define-key map (kbd "C-c C-b") 'psc-ide-rebuild)
             (define-key map (kbd "M-.") 'psc-ide-goto-definition)
             (define-key map (kbd "M-,") 'pop-tag-mark)
-            (define-key map (kbd "C-c C-S-l") 'psc-ide-parse-imports-in-buffer)
             map)
   (if psc-ide-mode
       (progn
@@ -442,7 +441,7 @@ ERROR-TYPE is either \"error\" or \"warning\" and gets displayed with the RAW-ME
 STRING is for use when the search used was with `string-match'."
   (let (result)
     (push `(module . ,(match-string-no-properties 1 string)) result)
-    (push `(qualifier . ,(match-string-no-properties 3 string)) result)
+    (push `(qualifier . ,(match-string-no-properties 4 string)) result)
     result))
 
 (defun psc-ide-parse-imports-in-buffer (&optional buffer)
