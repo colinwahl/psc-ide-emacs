@@ -55,7 +55,7 @@
             (define-key map (kbd "C-c C-b") 'psc-ide-rebuild)
             (define-key map (kbd "M-.") 'psc-ide-goto-definition)
             (define-key map (kbd "M-,") 'pop-tag-mark)
-            (define-key map (kbd "C-c C-l C-l") 'psc-ide-parse-imports-in-buffer)
+            (define-key map (kbd "C-c C-S-l") 'psc-ide-parse-imports-in-buffer)
             map)
   (if psc-ide-mode
       (progn
