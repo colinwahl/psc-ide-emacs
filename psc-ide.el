@@ -24,6 +24,8 @@
 ;;
 ;; Imports
 
+;; test comment
+
 (require 'company)
 (require 'cl-lib)
 (require 'dash)
